@@ -1,19 +1,37 @@
 <html>
 <head>
-<title>my site</title>
+<title>Fake News Checker</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+   rel="stylesheet"> -->
+
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
 </head>
 <body>
-<script src="FakeNews.js">
-</script>
 <div>
+    <h1> Is this Fake News? </h1>
+    <h4> Enter Article Text: </h4>
   <form id="url">
-  Url of the article:
+  Article text:
   <input type="text" name="url"><br>
-  <input type="button" onclick="urlProcess()" value="Submit">
+  <input type="button" id="submit" value="Submit">
   </form>
   <p id="dis_url"></p>
 </div>
 
+
+<div id="snopes">
+</div>
 
 <div>
   <script>
@@ -31,5 +49,8 @@
 <gcse:search></gcse:search>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="fakeNews.js"></script>
 </body>
 </html>

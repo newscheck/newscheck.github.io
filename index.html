@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>my site</title>
+</head>
+<body>
+<script src="FakeNews.js">
+</script>
+<div>
+  <form id="url">
+  Url of the article:
+  <input type="text" name="url"><br>
+  <input type="button" onclick="urlProcess()" value="Submit">
+  </form>
+  <p id="dis_url"></p>
+</div>
+
+
+<div>
+  <script>
+  (function() {
+    var cx = '014417153738434054453:eyxf8yrjq2y';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    console.log(s);
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
+</body>
+</html>

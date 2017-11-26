@@ -10,9 +10,11 @@ function fixedEncodeURI (str) {
     return encodeURI(str).replace(/%5B/g, '[').replace(/%5D/g, ']');
 }
 
+
 chrome.contextMenus.onClicked.addListener(function(clickData){
     if (clickData.menuItemId == "Snopesit" && clickData.selectionText){
         var snopesURL = "https://www.snopes.com/?s=" + fixedEncodeURI(clickData.selectionText);
+
         var createData = {
             "url": snopesURL,
             "type": "popup",

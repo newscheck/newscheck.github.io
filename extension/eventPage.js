@@ -18,8 +18,10 @@ chrome.contextMenus.onClicked.addListener(function(clickData){
             "type": "popup",
             "top": 5,
             "left": 5,
-            "width": screen.availWidth,
-            "height": screen.availHeight
+//            "width": screen.availWidth,
+//            "height": screen.availHeight
+            "width": 720,
+            "height": 480
         };
         chrome.windows.create(createData, function(){});
     }

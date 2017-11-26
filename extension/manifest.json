@@ -10,13 +10,13 @@
     "16": "icon16.png"
   },
 
-  "background": {
-    "scripts": ["eventPage.js"],
-    "persistent": false
+  "background" : {
+    "scripts" : ["background.js"]
   },
 
   "permissions": [
-          "tabs",
-          "contextMenus"
-        ]
+    "activeTab",
+    "storage",
+    "tabs"
+  ]
 }
